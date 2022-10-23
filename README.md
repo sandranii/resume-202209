@@ -1,5 +1,6 @@
 # resume-202209
 
+[DEMO] (https://sandranii.github.io/resume-202209/)
 ## Project setup
 ```
 npm install
