@@ -1,9 +1,13 @@
 <template>
   <div class="shop">
-    <h1>This is a page of my personal project.</h1>
-    <div>
+    <!-- <h1>This is a page of my personal project.</h1> -->
+    <h1>This is a shop page.</h1>
+    <!-- <h2>Product: {{ $route }}</h2> -->
+    <!-- <h2>Product: {{ $route.params }}</h2> -->
+    <h2>Product: {{ $route.params.productID }}</h2>
+    <!-- <div>
       <a href="https://github.com/sandranii/Blossoming">Blossoming</a>
-    </div>
+    </div> -->
 
     <el-date-picker
       v-model="value1"

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Hello it's me" :title="'🐢'" />
+    <img alt="photo" src="../assets/photo2.jpg" />
+    <HelloWorld msg="Hello0000 it's me" :title="'🐢'" />
     <MainItem :info="title" :count="num" @numadd="numAddOne" />
   </div>
 </template>

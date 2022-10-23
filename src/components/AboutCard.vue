@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "AboutCard",
   props: {
     msg: String,
     title: String,
@@ -42,16 +42,14 @@ export default {
   margin: 0;
   padding: 0;
   .card {
-  // display: block;
-  // background-color: rgb(255, 233, 188);
-  width: 600px;
+  width: 50vw;
   margin: auto;
   .title_area{
     display: flex;
     align-items: center;
     justify-content: space-between;
     h3 {
-    margin: 10px;
+    margin: 10px 0 5px 15px;
     color: #454545;
       span{
         color: #1F3864;
@@ -67,15 +65,11 @@ export default {
     padding: 0;
     line-height: 2;
     text-align: left;
-    // background-color: #ccc;
   }
   li {
-    // display: inline-block;
-    margin: 0 20px;
+    margin-left: 20px;
+    margin-right: 10px;
     font-size: 14px;
-  }
-  a {
-    color: #42b983;
   }
 }
 
