@@ -4,6 +4,7 @@ import ShopView from '../views/ShopView.vue'
 import MapView from '../views/MapView.vue'
 import AjaxView from '../views/AjaxView.vue'
 import AjaxView2 from '@/views/AjaxView2.vue'
+import AjaxView3 from '@/views/AjaxView3.vue'
 import TdxView from '../views/TdxView.vue'
 import NotFound from '../views/NotFound.vue'
 
@@ -46,6 +47,11 @@ export const routes = [
     name: 'api2',
     chName: '觀光api',
     component: AjaxView2
+  },
+  {
+    path: '/api3',
+    name: 'api3',
+    component: AjaxView3
   },
   {
     path: '/tdx',
