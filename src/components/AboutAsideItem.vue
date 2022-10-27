@@ -1,25 +1,40 @@
 <template>
-  <div class="card">
-    <!-- <h2>{{ msg }}</h2> -->
-    <div class="title_area">
+  <div class="item">
+    <h2>{{ msg }}</h2>
+    <!-- <div class="title_area">
       <h3>
-        {{ company }}
+        {{ company }} | 
         <span>{{ title }}</span>
       </h3>
       <p>{{ date }}</p>
-    </div>
+    </div> -->
     <ul>
-      <li>{{ bullet1 }}</li>
-      <li>{{ bullet2 }}</li>
-      <li>{{ bullet3 }}</li>
-      <li>{{ bullet4 }}</li>
+      <li>
+        {{ bullet1 }}
+        <p>{{desc1}}</p>
+        <a href="https://tibamef2e.com/cgd102/g2/">{{grouplink}}</a>
+      </li>
+      <li>
+        {{ bullet2 }}
+        <p>{{desc2}}</p>
+        <a href="https://sandranii.github.io/Blossoming/">{{personallink}}</a>
+      </li>
+      <li>
+        {{ bullet3 }}
+        <p>{{desc3}}</p>
+      </li>
+      <li>
+        {{ bullet4 }}
+        <p>{{desc4}}</p>
+      </li>
+
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AboutCard",
+  name: "AboutAsideItem",
   props: {
     msg: String,
     title: String,
@@ -30,6 +45,12 @@ export default {
     bullet2: String,
     bullet3: String,
     bullet4: String,
+    desc1:String,
+    desc2:String,
+    desc3:String,
+    desc4:String,
+    grouplink:String,
+    personallink:String
   },
 };
 </script>
@@ -41,8 +62,8 @@ export default {
 *{
   margin: 0;
   padding: 0;
-  .card {
-  width: 50vw;
+  .item {
+  width: 30vw;
   margin: auto;
   .title_area{
     display: flex;
@@ -50,7 +71,10 @@ export default {
     justify-content: space-between;
     h3 {
     margin: 10px 0 5px 15px;
-    color: #1F3864;
+    color: #454545;
+      span{
+        color: #1F3864;
+      }
     }
     p{
       font-size: 13px;
