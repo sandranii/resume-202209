@@ -29,7 +29,7 @@
 
 <script>
 import { routes } from "@/router/index.js";
-console.log(routes);
+// console.log(routes);
 export default {
   data() {
     return {

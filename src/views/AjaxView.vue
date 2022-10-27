@@ -33,7 +33,7 @@ export default {
       oReq.open("GET", "https://dummyjson.com/products");
       oReq.send();
       oReq.onload = () => {
-        console.log(oReq.response);
+        // console.log(oReq.response);
         const data = JSON.parse(oReq.response);
         this.data1 = data;
       };
